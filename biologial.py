@@ -228,7 +228,7 @@ all_bios: list[Biological] = [
 
     Clypeus('Lacrimam', 8.4),
     Clypeus('Margaritus', 11.9),
-    Clypeus('Speculumi', 11.9, [Distance(2500,999999)]),
+    Clypeus('Speculumi', 16.2, [Distance(2500,999999)]),
 
     Biological('Concha', 'Aureolas', 7.8, [Atmosphere('Ammonia')]),
     Biological('Concha', 'Biconcavis', 16.8, [Atmosphere('Nitrogen')]),
@@ -258,8 +258,8 @@ all_bios: list[Biological] = [
     Biological('Fungoida', 'Gelata', 3.3, [Atmosphere('Water')]),
     Biological('Fungoida', 'Setisis', 1.7, [Atmosphere('Ammonia')]),
     Biological('Fungoida', 'Setisis', 1.7, [Atmosphere('Methane')]),
-    Biological('Fungoida', 'Stabitis', 3.7, [Atmosphere('CarbonDioxide'), Temperature(180, 195)]),
-    Biological('Fungoida', 'Stabitis', 3.7, [Atmosphere('Water')]),
+    Biological('Fungoida', 'Stabitis', 2.7, [Atmosphere('CarbonDioxide'), Temperature(180, 195)]),
+    Biological('Fungoida', 'Stabitis', 2.7, [Atmosphere('Water')]),
 
     Biological('Osseus', 'Cornibus', 1.5, [Planet('Rocky'), Atmosphere('CarbonDioxide'), Temperature(180, 195)]),
     Biological('Osseus', 'Cornibus', 1.5, [Planet('High metal content'), Atmosphere('CarbonDioxide'), Temperature(180, 195)]),
