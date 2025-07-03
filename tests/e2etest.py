@@ -3,11 +3,12 @@ import logging
 from json import loads
 
 import fake_tkinter as tk
+from fake_config import FakeConfig
 from explorationhelper import ExplorationHelper
 
 
 class MyTestCase(unittest.TestCase):
-    dut = ExplorationHelper(logging.getLogger("pytest"), tk)
+    dut = ExplorationHelper(logging.getLogger("pytest"), FakeConfig(), tk)
 
     def test_something(self):
         master: tk.Widget = tk.Widget()
