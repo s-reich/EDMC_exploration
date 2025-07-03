@@ -276,7 +276,7 @@ all_bios: list[Biological] = [
     Biological('Osseus', 'Pumice', 3.2, [Planet('Ice'), Atmosphere('Argon')]),
     Biological('Osseus', 'Pumice', 3.2, [Planet('Ice'), Atmosphere('Nitrogen')]),
     Biological('Osseus', 'Spiralis', 2.4, [Planet('Rocky'), Atmosphere('Ammonia')]),
-    Biological('Osseus', 'Spiralis', 2.5, [Planet('High metal content'), Atmosphere('Ammonia')]),
+    Biological('Osseus', 'Spiralis', 2.4, [Planet('High metal content'), Atmosphere('Ammonia')]),
 
     Biological('Recepta', 'Conditivus', 14.3, [Planet('Rocky'), Atmosphere('CarbonDioxide'), Gravity(0, 0.27)]),
     Biological('Recepta', 'Conditivus', 14.3, [Planet('Icy'), Atmosphere('CarbonDioxide'), Gravity(0, 0.27)]),
@@ -305,8 +305,8 @@ all_bios: list[Biological] = [
     Biological('Tubus', 'Compagibus', 7.8, [Planet('Rocky'), Atmosphere('CarbonDioxide'), Temperature(160, 190)]),
     Biological('Tubus', 'Conifer', 2.4, [Planet('Rocky'), Atmosphere('CarbonDioxide'), Temperature(160, 190)]),
     Biological('Tubus', 'Rosarium', 2.6, [Planet('Rocky'), Atmosphere('Ammonia'), Temperature(160, 999)]),
-    Biological('Tubus', 'Sororibus', 11.9, [Planet('High metal content'), Atmosphere('Ammonia'), Temperature(160, 190)]),
-    Biological('Tubus', 'Sororibus', 11.9, [Planet('High metal content'), Atmosphere('CarbonDioxide'), Temperature(160, 190)]),
+    Biological('Tubus', 'Sororibus', 5.7, [Planet('High metal content'), Atmosphere('Ammonia'), Temperature(160, 190)]),
+    Biological('Tubus', 'Sororibus', 5.7, [Planet('High metal content'), Atmosphere('CarbonDioxide'), Temperature(160, 190)]),
 
     Biological('Tussock', 'Albata', 3.3, [Atmosphere('CarbonDioxide'), Temperature(175, 180)]),
     Biological('Tussock', 'Capillum', 7.0, [Atmosphere('Methane')]),
