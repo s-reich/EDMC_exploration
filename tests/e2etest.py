@@ -100,7 +100,7 @@ class TestGravityFilter:
     @staticmethod
     def test_range_small():
         assert TestGravityFilter.body.value_range_str([ScanResult(3)]) == "[17-257 M]", """
-            Three very cheap of three valuable ones"""
+            Three very cheap or three valuable ones"""
 
     @staticmethod
     def test_range_big():
