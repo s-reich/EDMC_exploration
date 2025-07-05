@@ -97,22 +97,18 @@ class TestGravityFilter:
         """
     ))
 
-    @staticmethod
-    def test_range_small():
-        assert TestGravityFilter.body.value_range_str([ScanResult(3)]) == "[17-257 M]", """
+    def test_range_small(self):
+        assert self.body.value_range_str([ScanResult(3)]) == "[17-257 M]", """
             Three very cheap or three valuable ones"""
 
-    @staticmethod
-    def test_range_big():
-        assert TestGravityFilter.body.value_range_str([ScanResult(10)]) == "[183-516 M]", """
+    def test_range_big(self):
+        assert self.body.value_range_str([ScanResult(10)]) == "[183-516 M]", """
             A lot of possibilities"""
 
-    @staticmethod
-    def test_aleoida():
-        assert ScanFromOrbit("Aleoida", TestGravityFilter.body).get_value_range() == (12.9, 12.9), """
+    def test_aleoida(self):
+        assert ScanFromOrbit("Aleoida", self.body).get_value_range() == (12.9, 12.9), """
             Given gravity and atmosphere, this must be Aleoida Gravis"""
 
-    @staticmethod
-    def test_clypeus():
-        assert ScanFromOrbit("Clypeus", TestGravityFilter.body).get_value_range() == (8.4, 11.9), """
+    def test_clypeus(self):
+        assert ScanFromOrbit("Clypeus", self.body).get_value_range() == (8.4, 11.9), """
             Two of the Clypeus; not sure about the distance-filtered one."""
