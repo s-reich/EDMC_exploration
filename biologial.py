@@ -117,9 +117,11 @@ class Temperature(Filter):
 
 
 class Gravity(Filter):
+    one_g: float = 9.81
+
     def __init__(self, min_grav: float, max_grav: float):
-        self.min: float = min_grav
-        self.max: float = max_grav
+        self.min: float = min_grav * Gravity.one_g
+        self.max: float = max_grav * Gravity.one_g
 
     def accepts(self, planet: dict) -> bool:
         return (
